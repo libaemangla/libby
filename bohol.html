@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram-like Photo Grid with Overlapping Captions</title>
+    <style>
+        body {
+            font-family: 'Arial Narrow Bold', sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 10px;
+            font-weight: normal; /* Set font weight to normal */
+            margin: 20px 0;
+            color: #44533a;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-grid-item {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            border: 1px solid  #fff;
+        }
+
+        .photo-grid-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .photo-grid-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .caption-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .photo-grid-item:hover .caption-container {
+            opacity: 1;
+        }
+
+        .caption-text {
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-weight: normal; /* Set font weight to normal */
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BOHOL TRIP</h1>
+    </div>
+    <div class="photo-grid">
+        <!-- Replace these image URLs with your own -->
+
+        <div class="photo-grid-item">
+        <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/41F18810-5B9C-4A26-9E66-501CD5EDCBA7.jpg" alt="Photo 1">
+            </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/02D9E132-676C-4D09-8DCA-D0E6F2BDA6D9.jpg" alt="Photo 1">
+        </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/DF19C626-C585-4A4A-9FE9-23AC01E084F2.jpg" alt="Photo 2">
+        </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/IMG_8197.jpg" alt="Photo 3">
+        </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/IMG_8200.jpg" alt="Photo 3">
+        </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/37707FF8-A9A4-4BC9-8E12-847F72E8C8E6.jpg" alt="Photo 3">
+        </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/ADC7B826-D678-4258-9502-EE2C68B25F8F.jpg" alt="Photo 3">
+        </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/B2F0F1C7-B56F-4D33-9BA3-0C1CD6CC0710.jpg" alt="Photo 3">
+        </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/CD7BD7AA-579E-4504-BC45-CD8C84D6B990.jpg" alt="Photo 3">
+        </div>
+
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/IMG_8359.jpg" alt="Photo 3">
+        </div>
+        <div class="photo-grid-item">
+            <img src="/Users/libbymanglapus/Desktop/personal/life in squares content!/IMG_8427.jpg" alt="Photo 3">
+        </div>
+    </div>     
+        <!-- Add more photo-grid-item divs with images and captions as needed --
+</body>
+</html>
